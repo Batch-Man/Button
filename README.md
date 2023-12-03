@@ -54,20 +54,20 @@ timeout /t 3 >nul
 Goto :Loop
 ```
 
-## Additional Info:
+## Additional Info:      
 
 This version of Button function contains much more GUI Capabilities.
 As it uses batbox.exe and calls it only once at the end of calculation...
 For the most efficient output. This ver. uses GetInput By Aacini too. For the
-Advanced Output on the console.
+Advanced Output on the console.      
 
-Visit www.Batch-man.com for more...
+Visit www.Batch-man.com for more...      
 
-PLUGINS REQUIRED FOR THIS PROJECT:
-Box Function              by Kvc
-Batbox                    by Darkbatcher
-GetInput                  by Aacini
-Getlen Function           by Kvc
-Quickedit                 UNKNOWN
-
+PLUGINS REQUIRED FOR THIS PROJECT:      
+Box Function              by Kvc      
+Batbox                    by Darkbatcher      
+GetInput                  by Aacini      
+Getlen Function           by Kvc      
+Quickedit                 UNKNOWN      
+      
 #batch-man
