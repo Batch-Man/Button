@@ -1,46 +1,39 @@
-# Button - by Kvc
+# Button
 ## Description
 
-This function helps in Adding a little GUI effect into your batch program.
-It Prints simple Button on the cmd console at specified X Y co-ordinate.
-After printing, Returns the area of the button on CMD and the Inverted color
-You can use this information in the main program with GetInput.exe Plugin of
-Batch. And, it will make your life much more easier than before.
+This function helps in adding a GUI button to your batch program.
+It displays a button on the console at a specified (X,Y) coordinate.
+After printing, it returns the area of the button and the inverted color, which can be used afterward with the GetInput.exe plugin.
 
-NOTE: IN THIS VERSION, AN ADDITIONAL PARAMETER IS ADDED @END OF CALL.
-      IT ALSO TAKES CARE OF THE QUICKEDIT MODE 'ISSUE' POST WIN 7 ERA.
+> [!NOTE]  
+> In this version, an addition parameter is required at the end of the call
+> It also fixes the QuickEdit issues in Windows 7 and later systems
 
-Author: Kvc
+**Author: Kvc**
 
 ## Usage
+
 `call Button [Item 1] [Item 2] [Item 3] ... X _Var_Box _Var_Hover _Var_Code`    
 `call Button [help ^| /^? ^| -h ^| -help ^| --help]`    
 `call Button ver`
 
-Where:-
+Where:
 
-`[Item]` is short for this COMBINATION = `[X] [Y] [color] "[Button Text]"`  
+`[Item]` is short for this combination: `[X] [Y] [color] "[Button text]"`  
 
-`[X]`	    X-ordinate of top-left corner of Button     
-`[Y]`	    Y-co_ordinate of top-left corner of Button  
-`ver`	    Version of Button function  
-`[Item #]`   The Buttons to display. Item Represents elements as told above.    
+`[X]`	    X coordinate of the top-left corner of the button
+`[Y]`	    Y coordinate of the top-left corner of the button
+`ver`	    Displays the version of the Button function  
+`[Item #]`   The buttons to display.
 
-`X`          Here, the Single 'X' (Must be FOURTH last element) indicates
-           the Loop Sequence breaker for the Function. After 'X' You need
-           to provide three Variables. Which will return the Corresponding 
-           values for the GetInput.exe, and Batbox.exe  
+`X`        Here, the single 'X' (Must be the fourth last element) indicates the loop sequence breaker for the function. After the 'X' you need to provide three variables, which will return the corresponding values for GetInput and BatBox.
 
-`_Var_Box`   The THIRD last parameter, which is name of the variable to save
-           the coordinates of All Buttons on console. (GetInput Supported)  
-`_Var_Hover` The SECOND last parameter, which is name of the variable to save
-           mouse hover color for each button. (GetInput Supported)  
-`_Var_Code`  The LAST parameter, which is the name of the variable to save 
-           'batbox' supported code to print buttons on console Quickly
-           without calling the button function again and again in loop. 
+`_Var_Box`   The third last parameter is the name of the variable to save the coordinates of all the buttons on the console (Support for GetInput).
+`_Var_Hover` The second last parameter is the variable's name to save mouse hover color for each button (Support for GetInput).
+`_Var_Code`  The last parameter is the name of the variable to save the BatBox argument string.
 
-## Example: 
-Use the above output variables with 'GetInput & Batbox' Plugins as follow:
+## Example
+Use the above output variables with GetInput and Batbox plugins as follows:
 
 ```bat
 Call Button 5 15 a0 "Button 1" 15 15 a0 "Button 2" X _Box _Hover _Code
@@ -54,20 +47,18 @@ timeout /t 3 >nul
 Goto :Loop
 ```
 
-## Additional Info:      
+## Additional information
 
-This version of Button function contains much more GUI Capabilities.
-As it uses batbox.exe and calls it only once at the end of calculation...
-For the most efficient output. This ver. uses GetInput By Aacini too. For the
-Advanced Output on the console.      
+This new version of the Button function is optimized, as it uses batbox.exe and calls it only once at the end of calculation.
 
-Visit www.Batch-man.com for more...      
+### Required plugins
 
-PLUGINS REQUIRED FOR THIS PROJECT:      
-Box Function              by Kvc      
-Batbox                    by Darkbatcher      
-GetInput                  by Aacini      
-Getlen Function           by Kvc      
-Quickedit                 UNKNOWN      
-      
+- Box Function              by Kvc      
+- Batbox                    by @darkbatcher      
+- GetInput                  by Aacini      
+- Getlen Function           by Kvc      
+- QuickEdit                 by @anic17
+
+Visit https://batch-man.com   
+
 #batch-man
