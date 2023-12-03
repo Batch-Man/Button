@@ -6,8 +6,8 @@ It displays a button on the console at a specified (X,Y) coordinate.
 After printing, it returns the area of the button and the inverted color, which can be used afterward with the GetInput.exe plugin.
 
 > [!NOTE]  
-> In this version, an addition parameter is required at the end of the call
-> It also fixes the QuickEdit issues in Windows 7 and later systems
+In this version, an addition parameter is required at the end of the call.  
+It also fixes the QuickEdit issues in Windows 7 and later systems.
 
 **Author: Kvc**
 
@@ -49,7 +49,7 @@ Goto :Loop
 
 ## Additional information
 
-This new version of the Button function is optimized, as it uses batbox.exe and calls it only once at the end of calculation.
+This new version of the Button function is optimized, as it calls batbox.exe only once at the end of the program.
 
 ### Required plugins
 
