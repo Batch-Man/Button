@@ -21,16 +21,16 @@ Where:
 
 `[Item]` is short for this combination: `[X] [Y] [color] "[Button text]"`  
 
-`[X]`	    X coordinate of the top-left corner of the button
-`[Y]`	    Y coordinate of the top-left corner of the button
-`ver`	    Displays the version of the Button function  
-`[Item #]`   The buttons to display.
+`[X]`	    X coordinate of the top-left corner of the button  
+`[Y]`	    Y coordinate of the top-left corner of the button  
+`ver`	    Displays the version of the Button function    
+`[Item #]`   The buttons to display.  
 
 `X`        Here, the single 'X' (Must be the fourth last element) indicates the loop sequence breaker for the function. After the 'X' you need to provide three variables, which will return the corresponding values for GetInput and BatBox.
 
-`_Var_Box`   The third last parameter is the name of the variable to save the coordinates of all the buttons on the console (Support for GetInput).
-`_Var_Hover` The second last parameter is the variable's name to save mouse hover color for each button (Support for GetInput).
-`_Var_Code`  The last parameter is the name of the variable to save the BatBox argument string.
+`_Var_Box`   The third last parameter is the name of the variable to save the coordinates of all the buttons on the console (Support for GetInput).  
+`_Var_Hover` The second last parameter is the variable's name to save mouse hover color for each button (Support for GetInput).  
+`_Var_Code`  The last parameter is the name of the variable to save the BatBox argument string.  
 
 ## Example
 Use the above output variables with GetInput and Batbox plugins as follows:
