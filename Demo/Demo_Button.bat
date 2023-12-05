@@ -1,7 +1,7 @@
 @Echo off
 Mode 80,25
 
-pushd "..\Src"
+pushd "%~dp0..\Src"
 Set "Path=%cd%;%cd%\Files;%Path%;"
 Popd
 
