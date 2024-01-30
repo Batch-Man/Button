@@ -42,7 +42,7 @@ batbox %_Code%
 GetInput /M %_Box% /H %_Hover%
 
 If "%Errorlevel%" == "1" (Btn 1 Clicked.)
-If "%Errorlevel%" == "2" (Btn 1 Clicked.)
+If "%Errorlevel%" == "2" (Btn 2 Clicked.)
 timeout /t 3 >nul
 Goto :Loop
 ```
